@@ -1,10 +1,23 @@
-# Aprendendo Programação
+# Guia de Referência de Tags HTML
 
-### Descrição
+Este arquivo contém uma lista de tags HTML e suas respectivas descrições para facilitar a consulta durante a programação.
 
-Esse é um arquivo para fins de anotações de novos aprendizados. Aqui estarão sugestões e principalmente listagens de tags com informações de como usá-las.
+## Estrutura Básica do HTML
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="caminho/para/style.css"> <!-- Importa o CSS -->
+    <title>Título da Página</title>
+</head>
+<body>
+    <!-- Conteúdo da página -->
+</body>
+</html>
+```
 
-##### Estruturação
+## Layout
+**Heder:** O `<header></header>` é um cabeçalho de uma seção ou página.
 
-**Header:** Serve como um cabeçalho de uma seção ou página.
-`<header></header>`
+**Nav:** O `<nav></nav>` é onde fica a navegação príncipal do seu index.html.
