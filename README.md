@@ -5,7 +5,6 @@ Nesse arquivo se encontra conhecimento para o aprendizado de HTML.
 #### Tabela de conteúdo
 1. [Estrutura de um arquivo HTML](#estrutura-de-um-arquivo-html)
 
-- Aula N2: https://www.udemy.com/course/web-html5-css3-javascript/learn/lecture/13745724#questions/13854440
 
 ## O que é HTML?
 
