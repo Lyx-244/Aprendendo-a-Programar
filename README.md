@@ -1,8 +1,10 @@
 # Aprendendo HTML5
 
-Nesse arquivo se encontra conhecimento para o aprendizado de HTML.
+---
 
-#### Tabela de conteúdo
+Neste repositório se encontra uma jornada de aprendizado sobre HTML5, CSS3 e JavaScript. Nele uma documentação se encontrará presente, com informações para quem desejar explorar ou ter alguma referência sobre o assunto.
+
+#### Listagem de conteúdo
 1. [Estrutura de um arquivo HTML](#estrutura-de-um-arquivo-html)
 
 
@@ -16,16 +18,58 @@ O Markdown, por sua vez, é mais simples e intuitivo, com um processamento menos
 
 ## Estrutura de um arquivo HTML
 
-Ao criar um novo projeto/arquivo, uma mesma estrutura irá se repetir para todos. Nessa estrutura `<!DOCTYPE html>` vai ser a primeira linha a ser escrita, com a função de dizer ao navegador que trata-se de uma página HTML. Em seguida virá a tag `<html>`, conhecida como tag ancestral, tendo `<head>` e `<body>` como tags filhos.
+Ao criar um novo projeto/arquivo, uma mesma estrutura irá se repetir para todos. Na primeira linha do documento, ``<!DOCTYPE html>`` dirá ao navegador como ele deve representar/lidar como o arquivo, instruindo de forma eficaz que trata-se de um conteúdo html.
 
 ```html
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Nome da Página</title>
+        <!-- Seção de metadados sobre o documento: títulos, links para estilos, scripts... -->
 
     </head>
     <body>
+        <!-- Nesta seção encontra-se toda a parte visual do arquivo: textos, links, imagens, vídeos... -->
 
+    </body>
+</html>
+```
+
+Após ``<!DOCTYPE html>`` prossegue-se com a(o) tag/elemento ``<html></html>``, sendo considerado como um elemento ancestral (ou uma tag ancestral) que contém ``<head>`` e ``<body>`` como tags/elementos filhos(a). Sempre que uma tag for aberta, deve-se fechá-la escrevendo a mesma tag com uma ``/`` antes do nome.
+
+### Considerações
+O conteúdo bruto de todo HTML deve sempre seguir a indentação, facilitando a legibilidade e tornando o seu entendimeto mais intuitivo e eficaz. A indentação funciona como como um quebra-cabeça, se as peças permanecerem espalhadas a imagem não fará sentido, pois encontra-se desconstruida.
+
+##### Indentação Ausente:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Página Confusa</title>
+<style>
+body { background-color: #f0f0f0; }
+h1 { color: blue; }
+</style>
+</head>
+<body>
+<h1>Bem-vindo</h1><p>Este é um parágrafo.</p>
+<p>Outro parágrafo.</p>
+<ul><li>Item 1</li><li>Item 2</li>
+<li>Item 3</li></ul></body>
+</html>
+```
+
+##### Indentação Presente:
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página Bem Indentada</title>
+    </head>
+    <body>
+        <h1>Bem-vindo</h1>
+        <p>Este é um parágrafo bem indentado.</p>
+        <p>Outro parágrafo aqui.</p>
     </body>
 </html>
 ```
