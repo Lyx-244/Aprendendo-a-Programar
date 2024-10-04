@@ -38,38 +38,4 @@ nav {
 	font-family: "Old Standard TT", serif;
 	user-select: none;
 	cursor: default;
-}	
-
-/*	Input do Header	*/
-
-.input-div{
-	width: 1200px;
-	display: flex;
-	margin: 0 auto;
-	justify-content: center;
-	position: absolute;
-	z-index: 2;
-}
-
-.input-camp {
-	width: 500px;
-	height: 30px;
-	border: none;
-	outline: none;
-	padding-left: 30px;
-	border-radius: 0 0 20px 20px;
-	box-shadow: 0 0 5px black;
-	font-size: 16px;
-}
-
-.template {
-	width: 1200px;
-	margin: 0 auto;
-	justify-items: center;
-}
-
-.wallpaper {
-	width: 1200px;
-	position: absolute;
-	z-index: 1;
 }
