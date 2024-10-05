@@ -8,19 +8,32 @@ Aqui encontra-se anotações pessoais sobre html5. Tentarei atualizar esse repos
 
 #### Listagem de conteúdo
 1. [O que é HTML?](#o-que-é-html?)
-2. [Estrutura de um arquivo HTML](#estrutura-de-um-arquivo-html)
+2. [Navegadores: O que é? Como eles lidam com HTML?](#navegadores-o-que-é-como-eles-lidam-com-html)
+    - [O que é HTTP e HTTPS?](#o-que-http-e-https)
+    - [Como eles lidam com o HTML?](#como-eles-lidam-com-o-html)
+3. [Estrutura de um arquivo HTML](#estrutura-de-um-arquivo-html)
 
 
 ## O que é HTML?
 
 Em termos simples, HTML é uma Linguagem de Marcação Hipertextual (HyperText Markup Language). Diferentemente do JavaScript ou Python, o HTML **não é conciderado** como uma linguagem de programação, pois não possui a mesma lógica (loops, condicionais, etc). 
 
-Para compreender melhor, acompanhe o exemplo tirado do [ChatGPT](chatgpt.com):
+> "HTML pode ser comparado à estrutura de uma casa, definindo onde estão as paredes, portas e janelas, enquanto JavaScript é como os móveis e a decoração que dão vida a esse espaço. Sem HTML, não teríamos uma base organizada, mas, sem JavaScript, essa estrutura ficaria vazia e sem interatividade. Juntos, eles criam uma experiência web completa, onde a estrutura é essencial, mas a funcionalidade é o que realmente torna tudo dinâmico e envolvente."
+> Fonte: [ChatGPT](chatgpt.com)
 
-"HTML pode ser comparado à estrutura de uma casa, definindo onde estão as paredes, portas e janelas, enquanto JavaScript é como os móveis e a decoração que dão vida a esse espaço. Sem HTML, não teríamos uma base organizada, mas, sem JavaScript, essa estrutura ficaria vazia e sem interatividade. Juntos, eles criam uma experiência web completa, onde a estrutura é essencial, mas a funcionalidade é o que realmente torna tudo dinâmico e envolvente."
+## Navegadores: O que é? Como eles lidam com HTML?
+Imagine um que você é um barco. Você possui espaço para/e carga para levar para um destino, mas sem um condutor para o leme nada acontece, pois você é apenas um barco. Não vai chegar a lugar algum sozinho.
 
-#### Referências:
-- Devmedia.com.br: [O que é o HTML5](https://www.devmedia.com.br/o-que-e-o-html5/25820)
+É isso que aplicativos como [Mozilla FireFox](https://www.mozilla.org/pt-BR/firefox/browsers/what-is-a-browser/), [Google Chrome](https://www.google.pt/intl/pt-PT/chrome/?brand=CHBD&ds_kid=43700076570745610&gad_source=1&gclid=CjwKCAjwx4O4BhAnEiwA42SbVHIwomIZOUbXXWt6MG8skq-cZUMSGZA-Z-RxFMVUrAzi4mHYvNu7zhoCnhsQAvD_BwE&gclsrc=aw.ds), [Microsoft Edge](https://www.microsoft.com/pt-br/edge/download?form=MA13FJ) e [Apple Safari](https://www.apple.com/br/safari/) fazem, eles conduzem para aquilo que você almeja alcançar ou conhecer, fazendo o uso de requisições HTTP ou HTTPS.
+
+#### O que HTTP e HTTPS?
+Quando falamos de *HyperText Transfer Protocol* (HTTP), queremos dizer **Protocolo de Transferência de Hipertexto**; quando falos de *HyperText Transfer Protocol Secure* (HTTPS), queremos dizer **Protocolo de Transferência de Hipertexto Seguro**.
+
+> "O protocolo de transferência de hipertexto (HTTP) é um protocolo ou conjunto de regras de comunicação para comunicação entre cliente e servidor. Quando você visita um site, o navegador envia uma solicitação HTTP ao servidor Web, que responde com uma resposta HTTP. O servidor Web e o navegador trocam dados como texto simples. Resumindo, o protocolo HTTP é a tecnologia subjacente que alimenta a comunicação de rede. Como o nome sugere, o protocolo de transferência de hipertexto seguro (HTTPS) é uma versão mais segura ou uma extensão do HTTP. No HTTPS, o navegador e o servidor estabelecem uma conexão segura e criptografada antes de transferir dados."
+> Fonte: [aws.amazon.com](https://aws.amazon.com/pt/compare/the-difference-between-https-and-http/#:~:text=O%20protocolo%20de%20transfer%C3%AAncia%20de,responde%20com%20uma%20resposta%20HTTP.)
+
+#### Como eles lidam com o HTML?
+Quando um navegador web encontra um HTML, ele interpreta sua estrutura de cima para baixo. Com base na organização das tags, elementos e atributos usados, definições de estilo e scripts (entre outras coisas), ele renderiza as informações e exibe (imagens, links, parágrafos, vídeos, aúdios, etc) na tela  do computador. Para isso ele conta com um motor (engine), que é responsável por descobrir quais e como renderizar as informações dos arquivos que ele recebeu para que você visualize e interaja com as mesmas.
 
 ## Estrutura de um arquivo HTML
 
