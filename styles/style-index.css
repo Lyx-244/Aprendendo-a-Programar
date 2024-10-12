@@ -87,10 +87,10 @@ h1 {
 
 .circle {
 	position: absolute;
-	top: -170px;
-	left: -300px;
-	width:78vw;
-	height: auto;
+	top: -15.5vw;
+	left: -22vw;
+	width:80vw;
+	height: -100vh;
 	z-index: -1;
 	fill: #8036ff;
 }
@@ -101,7 +101,7 @@ h1 {
 img {
 	position: absolute;
 	top: 0;
-	right: 50px;
+	right: 6vw;
 	width: auto;
 	height: 105vh;
 	z-index: -2;
@@ -151,7 +151,7 @@ img {
 
 .button {
 	width: 32.1vw;
-	height: 5vw;
+	height: 5.8vw;
 	display: flex;
 	background-color: rgb(230, 230, 230, 0.95);
 	border-radius: 1.5vw;
@@ -169,4 +169,92 @@ img {
 	text-decoration: none;
 	color: #8036ff;
 	margin: auto;
+}
+
+
+/* Responsividade mobile/tablets */
+
+@media (max-width: 768px) {
+	nav {
+		height: 7vh;
+	}
+
+	ul {	/* Retirando temporariamente até que eu aprenda como criar barra lateral escondida */
+		display: none;
+	}
+
+
+	/* Definindo a logo e o ícone */
+
+	.logo-icon {
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 5vw;
+	}
+
+	.octicon {
+		width: 5.5vw;
+		fill: white;
+	}
+
+
+	/* Definindo a imagem */
+
+	img {
+		top: 5vh;
+		right: 21vw;
+		height: 85vw;
+	}
+
+
+	/* Definindo o texto */
+
+	.text-container-left {
+		justify-content: none;
+	}
+
+	.text-left {
+		position: relative;
+		top: 31vh;
+		width: 70vw;
+		margin: 0 auto;
+	}
+
+	.nome {
+		font-size: 5vw;
+	}
+
+	.function {
+		font-size: 7vw;
+	}
+
+	.paragraph {
+		font-size: 2.5vw;
+	}
+
+	.button {
+		width: 64.5vw;
+		height: 10vw;
+		border-radius: 2.5vw;
+		margin-top: 2.5vh;
+		background-color: white;
+	}
+
+	.button>a {
+		font-size: 3.5vw;
+	}
+
+
+	/* Definindo o círculo */
+
+	.circle {
+		width: 120vw;
+		height: 110vw;
+		transform: scale(1.5);
+		top: 80vh;
+		left: -10vw;
+	}
 }
