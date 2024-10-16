@@ -126,7 +126,7 @@ Como pôde observar, ``doctype`` no HTML5 é o mais simples de todas as declara�
 #### Sintaxe:
 Sempre que você for desenvolver uma página HTML, precisarar declarar ``doctype`` no topo do arquivo. Isso deve ser feito antes de qualquer tag, mas como?
 
-Para declarar ``doctype``, escreva sem seu arquivo da seguinte forma:
+Para declarar ``doctype``, escreva no seu arquivo da seguinte forma:
 
 ```html
 <!DOCTYPE html>
