@@ -11,7 +11,7 @@ Aqui encontra-se anotações pessoais sobre HTML5. Tentarei atualizar esse repos
 Aqui você pode clicar rápidamente nos link abaixo e ir para alguma dessas seções.
 
 1. [O que é HTML?](#o-que-é-html?)
-2. [Navegadores: O que é um navegador?](#navegadores-o-que-é-um-navegador)
+2. [Navegadores: O que é?](#navegadores-o-que-é)
     - [Como um navegador lida com HTML?](#como-um-navegador-lida-com-html)
     - [Como tudo funciona?](#como-tudo-funciona)
 3. [Estrutura de um arquivo HTML](#estrutura-de-um-arquivo-html)
@@ -19,6 +19,9 @@ Aqui você pode clicar rápidamente nos link abaixo e ir para alguma dessas seç
 4. [Componentes do HTML](#componetes-do-html)
     - [Estrutura do documento](#estrutura-do-documento)
         - [!DOCTYPE](#doctype)
+        - [HTML](#html)
+        - [HEAD](#head)
+        - [BODY](#body)
 
 # O que é HTML?
 
@@ -27,7 +30,7 @@ Em termos simples, HTML é uma Linguagem de Marcação Hipertextual (HyperText M
 > "HTML pode ser comparado à estrutura de uma casa, definindo onde estão as paredes, portas e janelas, enquanto JavaScript é como os móveis e a decoração que dão vida a esse espaço. Sem HTML, não teríamos uma base organizada, mas, sem JavaScript, essa estrutura ficaria vazia e sem interatividade. Juntos, eles criam uma experiência web completa, onde a estrutura é essencial, mas a funcionalidade é o que realmente torna tudo dinâmico e envolvente."
 > *Fonte: [ChatGPT](chatgpt.com)*
 
-# Navegadores: O que é um navegador?
+# Navegadores: O que é?
 Primeiro, imagine-se como um navio cargueiro: você possui vários containers a bordo (dúvidas, necessidades, interesses, etc), mas se você não possuir alguém para conduzi-lo ao destino solicitado, nada acontece.
 
 É isso que aplicativos como [Mozilla FireFox](https://www.mozilla.org/pt-BR/firefox/browsers/what-is-a-browser/), [Google Chrome](https://www.google.pt/intl/pt-PT/chrome/?brand=CHBD&ds_kid=43700076570745610&gad_source=1&gclid=CjwKCAjwx4O4BhAnEiwA42SbVHIwomIZOUbXXWt6MG8skq-cZUMSGZA-Z-RxFMVUrAzi4mHYvNu7zhoCnhsQAvD_BwE&gclsrc=aw.ds), [Microsoft Edge](https://www.microsoft.com/pt-br/edge/download?form=MA13FJ) e [Apple Safari](https://www.apple.com/br/safari/) fazem: eles o conduzem pelo oceano da internet em busca do que você almeja alcançar ou conhecer, fazendo o uso de requisições HTTP ou HTTPS.
@@ -141,3 +144,101 @@ Lembrando que ``doctype`` é **case sensitivity**, então não importa se você 
 ```
 
 A exclamação em ``doctype`` serve para indicar ao navegador que o que se segue é uma declaração de tipo de documento, facilitando a identificação imediata.
+
+---
+
+#### HTML
+Após inserir ``doctype`` no seu arquivo, será necessário colocar obrigatoriamente três tags para que possamos começar a desenvolver a página. Assim, podemos dizer que, após declarar que trata-se de um ``index.html`` na versão cinco, ``<html></html>`` é o primordio de seu arquivo, explicitando, através da tag de abertura e fechamento, onde sua página começa e termina.
+
+Mas o que seria uma tag de abertura e fechamento? Vamos aprender neste momento, e não se preocupe, é mais simples que um jogo de xadrez.
+
+#### Sintaxe:
+Para escrever a primeira e mais importanto tag do html, basta digitar ``html`` entre o sinal de menor que (<) e maior que (>):
+
+```html
+<html>  <!-- Tag de abertura -->
+```
+Essa é uma tag de abertura, mas para que ela funcione corretamente, é necessário fecha-la com uma tag de fechamento. Para isso, basta escrever a mesma tag de abertura, com a exceção de que deve-se colocar uma ``/`` antes do nome do elemento:
+
+```html
+<html></html>   <!-- Tag de fechamento -->
+```
+
+---
+
+#### Boas práticas:
+Assim como qualquer elemento, ``html`` pode ter atributos. A única diferença é que algumas tags não tem uma obrigação restrita em relação a isso, enquanto outras precisam de um atributo específico para seu total funcionamento.
+
+``html`` possui três atributos, mas apenas um é utilizado, enqaunto outro é mais específico para idiomas que são lidos da direita para esquerda. O último não é mais necessário no HTML5.
+
+```html
+<html lang="pt-br"></html>  <!-- Usado para SEO (Search Engine Optimization); muito útil para a tradução autommática do navegador. -->
+
+<html dir="rtl"></html>     <!-- Usado para especificar a direção em que o texto deve ser organizado e lido. -->
+
+<html xmlns="http://www.w3.org/1999/xhtml"></html>     <!-- Desnecessário no HTML5-->
+```
+
+---
+
+#### HEAD
+O ``head`` é o cabeçalho do seu ``index.html``. A tradução literal de head para português é **cabeça**, e em um contexto de escrita e línguagem, pode ser interpretado como **cabeçalho**.
+
+Em outras palavras, o ``head`` é a cabeça do seu arquivo, onde os "pensamentos e ideias" costumam ficar, diferente do body que está mais associado ao movimento e realização em si. Mas o que seria esses "pensamentos"?
+
+Os pensamentos que podem residir no ``head`` são metadados que fazem o seu arquivo funcionar de uma forma mais refinada. Esse metadados não são visíveis no navegador (títulos, links para css e scripts, fontes tipográficas, servidores), mas etão lá com toda certeza. Você pode usar a função "inspecionar" (DevTools) do seu navegador e ver o ``head`` de algum site que você visita com frequência.
+
+Por exemplo:
+
+```html
+<meta charset="UTF-8">  <!-- Função: auxiliar o navegador na interpretação de caracteres especiais. -->
+```
+
+O ``meta`` pode ser usados de outras formas, mas nesse caso em específico, ela fornece ao navegador auxílio para que ele interprete caracteres especiais de maneira correta. Alguns exemplos: ã, á, ê, ç, etc.
+
+É como se ``meta charset="UTF-8"`` estivesse ao lado do navegador dizendo o que é cada um dos caracteres especiais. Sem isso a palavra "ação" poderia ser exibida dessa forma: Ã§Ã£o
+
+Mas isso é algo que depende muito. O ponto é que sem ``meta charset="UTF-8"``, a exibição não é garantida, podendo funcionar bem para nós mesmo, e incorretamente para outra pessoa.
+
+---
+
+#### BODY
+Diferentemente do ``head``, o ``body`` lida com tudo que será exibido no corpo do navegador. Não é à toa que **corpo** é a tradução literal de body para português.
+
+> Em outras palavras, o ``head`` é a cabeça do seu arquivo, onde os "pensamentos e ideias" costumam ficar, diferente do body que está mais associado ao movimento e realização em si.
+>*Fonte: [Head](#head)*
+
+Sendo assim, mesmo que não seja uma tag escrita corretamente, qualquer coisa que você coloque será exibido na tela, desde que você siga a [estrutura base](#estrutura-base) do HTML:
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Escrevendo no body</title>
+    </head>
+    <body>
+        Aqui vai sua mensagem!
+        <p>Não precisa escrever uma tag para textos simples.</p>
+
+        <div>
+            Ainda assim, existem exceções.
+            Uma div não será visível, a menos que você mude o background com CSS ou usando style.
+
+            Falaremos sobre divs mais para frente.
+
+            <style>
+                /* A tag style pode ser usada tanto no head quanto no body, ou até mesmo como um atributo, mas isso é assunto para outro momento. */
+                div {
+                    background-color: blue;
+                }
+            </style>
+        </div>
+
+        Pode copiar o código se quiser visualizar como fica no navegador.
+    </body>
+</html>
+```
+Um peqeuno exercício prático: [Crie a estrutura básica](#estrutura-de-um-arquivo-html) do HTML, depois crie no ``body`` o ``h1`` e ``p`` seguindo a lógica de abertura e fechamento falado na [sintaxe do html](#html). Faça sem ver a resposta, e quando terminar, acesse essa documentão sobre [h1](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Heading_Elements) e [p](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/p).
+
+Você deve visualizar algo assim:
+![Imagem de exemplo](images/image-1.png)

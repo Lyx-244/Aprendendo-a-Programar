@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+/*	=================================================
+	Configurações Globais
+	================================================= */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	overflow: hidden;
+	background-color: #0e0913;
+}
+
+body a {
+	text-decoration: none;
+}
+
+/*	=================================================
+	Header
+	================================================= */
+
+header>nav {
+	display: flex;
+	padding: 1vw;
+}
+
+	.nav-content {
+		width: 80vw;
+		display: flex;
+		margin: 0 auto;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+
+		.logo-icon {
+			display: flex;
+			align-items: center;
+		}
+
+			.logo-icon h1 {
+				font-family: "Outfit", sans-serif;
+				font-optical-sizing: auto;
+				font-style: normal;
+				font-size: 2vw;
+				color: white;
+			}
+
+			/* Ícone do GitHub */
+			.octicon {
+				width: 2.5vw;
+				height: auto;
+				margin-left: 12px;
+			}
+
+		.nav-content ul {
+			display: flex;
+			list-style-type: none;
+			font-family: "Inter", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: 700;
+			font-style: normal;
+			font-size: 1.3vw;
+		}
+
+			ul>li:not(:last-child) {
+				margin-right: 4vw;
+			}
+
+			.nav-content>ul>li>.a1 {
+				color: #8036ff;
+			}
+
+			.nav-content>ul>li>a {
+				color: #d6d6d6;
+				transition: color 0.3s ease;
+			}
+
+			.nav-content>ul>li>a:hover:not(.a1) {
+				color: white;
+			}
+
+/*	=================================================
+	Section
+	================================================= */
+
+.container-text-left {
+	width: 80vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 85vh;
+	margin: 0 auto;
+}
+
+	.text-left {
+		width: 40vw;
+	}
+
+		/* Ajustando e posicionando texto */
+		.name, .function, .paragraph, .button {
+			font-family: "Outfit", sans-serif;
+			font-optical-sizing: auto;
+			font-style: normal;	
+		}
+
+		.name {
+			font-size: 2.5vw;
+			color: #0e0913;
+		}
+
+		.function {
+			font-size: 3.5vw;
+			margin: 0.5vw 0 0.5vw 0;
+			color: white;
+		}
+
+		.paragraph {
+			font-size: 1.3vw;
+			font-weight: 700;
+			color: #0e0913;
+		}
+
+		.text-left a {
+			font-size: 1.5vw;
+			font-weight: 700;
+			color: #8036ff;
+			margin: auto;
+		}
+
+		.button {
+			display: flex;
+			width: 32.1vw;
+			height: 5.8vw;
+			margin-top: 1vw;
+			align-items: center;
+			justify-content: center;
+			border-radius: 1.5vw;
+			background-color: rgb(230, 230, 230, 0.95);
+			transition: background-color 0.3s ease;
+		}
+
+		.button:hover {
+			background-color: white;
+		}
+
+
+	/* Definindo cor e posicionamento do circulo */
+	.circle {
+		position: absolute;
+		top: 0;
+		left: -5vw;
+		width: 60vw;
+		height: 100vh;
+		z-index: -1;
+		transform: rotate(90deg);
+		fill: #8036ff;
+	}
+	
+	/* Definindo mode de mesclagem da imagem e o posicionamento */
+	img {
+		position: absolute;
+		top: 0;
+		right: 6vw;
+		width: auto;
+		height: 100vh;
+		z-index: -2;
+		mix-blend-mode: screen;
+	}
+
+@media (orientation: portrait) {
+	body {
+		overflow: hidden;
+		overflow-x: hidden;
+	}
+
+	header nav {
+		padding: 3vw;
+	}
+
+	.nav-content>ul {
+		display: none;
+	}
+
+	.nav-content {
+		justify-content: center;
+	}
+
+		.logo-icon h1 {
+			font-size: 5vw;
+		}
+	
+		/* Ícone do GitHub */
+		.octicon {
+			width: 5.5vw;
+			height: auto;
+			fill: white;
+		}
+
+	.text-left {
+		width: 70vw;
+		position: relative;
+		bottom: -10vh;
+		margin: 0 auto;
+	}
+
+		.name {
+			font-size: 5vw;
+		}
+
+		.function {
+			font-size: 7vw;
+		}
+
+		.paragraph {
+			font-size: 2.5vw;
+		}
+
+		.button {
+			width: 64.5vw;
+			height: 10vw;
+			font-size: 3.5vw;
+			border-radius: 2.5vw;
+			margin-top: 2.5vh;
+			background-color: white;
+		}
+
+	.circle {
+		width: 100vw;
+		height: 60vh;
+		top: initial;
+		left: 0;
+		bottom: -15vh;
+		transform: rotate(0deg);
+	}
+
+	.img-div {
+		display: flex;
+		position: relative;
+		top: -10vh;
+		width: auto;
+		height: 50vh;
+		justify-content: center;
+	}
+
+		img {
+			position: initial;
+			width: auto;
+			height: 100%;
+		}
+}

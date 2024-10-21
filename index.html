@@ -4,13 +4,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="styles/style-index.css">
+	<!-- CSS -->
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/reset.css">
 
+	<!-- Fontes -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
-	<title>Portfólio</title>
+	<title>Portfólio - Landerson Cavalcante S.</title>
 </head>
 <body>
 
@@ -20,6 +23,8 @@
 			<div class="nav-content">
 				<div class="logo-icon">
 					<h1>L. C. S.</h1>
+
+					<!-- Ícone do GitHub -->
 					<a href="https://github.com/Lyx-244">
 						<svg aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github">
 							<path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
@@ -30,9 +35,9 @@
 
 				<ul>
 					<li><a href="#" class="a1">Início</a></li>
-					<li><a href="#" class="a2">Ajuda</a></li>
-					<li><a href="#" class="a3">Serviços</a></li>
-					<li><a href="#" class="a4">Contato</a></li>
+					<li><a href="#">Ajuda</a></li>
+					<li><a href="#">Serviços</a></li>
+					<li><a href="#">Contato</a></li>
 				</ul>
 
 			</div>
@@ -42,27 +47,29 @@
 	</header>
 	
 	<section>
-		<svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-			<circle cx="50" cy="50" r="50" />
-		</svg>
-
-		<img src="https://cdn.pixabay.com/photo/2019/12/04/09/30/man-4672229_1280.jpg" alt="pixabey.com">
-
-		<div class="text-container-left">
+		<div class="container-text-left">
+			<div class="img-div">
+				<img src="https://cdn.pixabay.com/photo/2019/12/04/09/30/man-4672229_1280.jpg" alt="pixabey.com">
+			</div>
 			<div class="text-left">
-				<h2 class="nome">Landerson Cavalcante S.</h2>
+				<h1 class="name">Landerson Cavalcante S.</h1>
 				<h2 class="function">Desenvolvedor Web</h2>
 				<p class="paragraph">Um jovem com ideias novas, destravado para o aprendizado. Experiências no meu Portfólio.</p>
 
-				<div class="button">
-					<a href="#">PORTFÓLIO</a>
-				</div>
-
+				<a href="#">
+					<div class="button">
+						PORTFÓLIO
+					</div>
+				</a>
 			</div>
-
 		</div>
+
+		<svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="overflow-x: hidden;">
+			<circle cx="50" cy="80" r="80" />
+		</svg>
+
 
 	</section>
 
 </body>
-</html>
+</html>		
